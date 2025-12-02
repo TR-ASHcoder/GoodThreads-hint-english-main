@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>english</title>
+<style>
+
+@font-face {
+    font-family: announcement;
+    src: url(fonts/Minecraftia-Regular.ttf)
+  }
+
+.announcement {
+    font-family:announcement;
+    font-size: 1rem;
+    color: rgb(255, 252, 51);
+    text-shadow: 1px 1px rgb(121, 89, 2);
+    position:static;
+    animation: textAnim 3s infinite alternate ease-in-out;
+}
+
+@keyframes textAnim {
+    0%   { transform: scale(1)    rotate(0deg); }
+    10%  { transform: scale(1.02) rotate(-3deg); }
+    20%  { transform: scale(1.04) rotate(5deg); }
+    30%  { transform: scale(1.06) rotate(-2deg); }
+    40%  { transform: scale(1.08) rotate(3deg); }
+    50%  { transform: scale(1.1)  rotate(-2deg); }
+    60%  { transform: scale(1.08) rotate(3deg); }
+    70%  { transform: scale(1.06) rotate(-2deg); }
+    80%  { transform: scale(1.04) rotate(5deg); }
+    90%  { transform: scale(1.02) rotate(-3deg); }
+    100% { transform: scale(1)    rotate(0deg); }
+}
+
+
+
+
+</style>
+</head>
+<body>
+    <center><div class="announcement" id="announcementrand"></div></center>
+    
+    
+    <script>
+        
+        (function newFact() {
+        var facts = ['Ver . 2.38 !', 'Fun fact: the logos name is choby!', 'UhhhhH','DONT SNITCH','PIRATE EVERYTHING','PLS USE THE SUGGEST FORM','YARRRRR','CATS <3','i use mint btw','all my homies use Good Threads','added new sites to....','Wine Is Not an Emulator'];
+        var randomFact = Math.floor(Math.random() * facts.length);
+        document.getElementById('announcementrand').innerHTML = facts[randomFact];
+        })();
+
+        
+    </script>
+</body>
+</html>
